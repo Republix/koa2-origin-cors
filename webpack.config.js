@@ -1,6 +1,4 @@
-const webpack = require('webpack'),
-      path = require('path'),
-      UglifyJSPlugin =  require('uglifyjs-webpack-plugin')
+const path = require('path')
 
 module.exports = {
     mode: 'production',

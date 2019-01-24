@@ -1,6 +1,6 @@
 {
-  "name": "koa2-cors-mid",
-  "version": "0.0.8",
+  "name": "koa2-origin-cors",
+  "version": "1.0.0",
   "description": "cors middleware for koa2 server",
   "main": "dist/cors.js",
   "scripts": {

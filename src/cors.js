@@ -50,12 +50,16 @@ module.exports = (options = {}) => {
         let origin = ctx.request.header.origin
         
         if (MODE === 0) { // 放行
-        } else if (MODE === 1 && options.blackList.includes(origin)) { // blackList mode
-            ctx.status = terminationCode
-            return
-        } else if (MODE === 2 && !options.whiteList.includes(origin)) { // whiteList mode
-            ctx.status = terminationCode
-            return
+        } else if (MODE === 1) { // blackList mode
+            if (options.blackList.includes(origin)) {
+                ctx.status = terminationCode
+                return
+            }
+        } else if (MODE === 2 ) { // whiteList mode
+            if (!options.whiteList.includes(origin)) {
+                ctx.status = terminationCode
+                return
+            }
         } else if (MODE === 3) { // 仅设置了 origin
             origin = options.origin === '*' ? 
                     (credentials ? origin : '*') : typeof options.origin === 'function' ? 
@@ -82,8 +86,6 @@ module.exports = (options = {}) => {
 
             // 设置是否允许携带Cookies
             if (options.credentials === true || MODE === 0) {
-                console.log('123', ctx.get('Access-Control-Allow-Origin'))
-
                 ctx.set('Access-Control-Allow-Credentials', 'true');
             }
 

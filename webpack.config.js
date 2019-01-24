@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
         filename: 'cors.js',
+        globalObject: 'this',
         libraryTarget: 'umd'
     }
 }

@@ -1,0 +1,30 @@
+{
+  "name": "koa2-cors-mid",
+  "version": "0.0.8",
+  "description": "cors middleware for koa2 server",
+  "main": "dist/cors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Republix/koa2-cors-mid.git"
+  },
+  "keywords": [
+    "koa2",
+    "middleware",
+    "cors"
+  ],
+  "author": "republix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Republix/koa2-cors-mid/issues"
+  },
+  "homepage": "https://github.com/Republix/koa2-cors-mid#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}

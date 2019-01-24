@@ -1,0 +1,1 @@
+#### cors middleware for koa2-server

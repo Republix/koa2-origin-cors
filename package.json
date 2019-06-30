@@ -1,6 +1,6 @@
 {
   "name": "koa2-origin-cors",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "cors middleware for koa2 server",
   "main": "dist/cors.js",
   "scripts": {
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/Republix/koa2-cors-mid#readme",
   "devDependencies": {
-    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
   }

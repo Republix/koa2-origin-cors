@@ -1,8 +1,5 @@
 > # cors middleware for koa2-server
 >
-[![NPM version][npm-image]][npm-url]
-[![Node version][node-version-image]][npm-url]
-[![NPM download][npm-download-image]][npm-url]
 
 > 带有域名拦截功能的koa2-cors中间件
 >
@@ -18,7 +15,7 @@
 >
 > ``` 
 >  const Koa = require('koa')
->  const cors = require('koa2-cors-mid')  
+>  const cors = require('koa2-origin-cors')  
 >  
 >  const server = new Koa()
 >  server.use(cors())
